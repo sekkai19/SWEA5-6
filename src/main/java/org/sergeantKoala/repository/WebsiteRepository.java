@@ -33,5 +33,9 @@ public class WebsiteRepository {
         }
     }
 
+    public List<Website> getAllWebsites(){
+        return websites;
+    }
+
 
 }

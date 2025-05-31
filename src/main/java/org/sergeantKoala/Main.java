@@ -1,19 +1,18 @@
 package org.sergeantKoala;
 
-import org.sergeantKoala.repository.UserRepository;
-import org.sergeantKoala.service.Mockloader;
+import org.sergeantKoala.service.MockLoader;
+import org.sergeantKoala.service.Scheduler;
 
 public class Main {
+    private static Scheduler scheduler=new Scheduler();
     public static void main(String[] args) {
-    Mockloader mockloader= new Mockloader();
-    Mockloader.loadMockdata();
-    soutMock();
+    MockLoader.loadMockdata();
+    scheduler.start();
+
 
 
 
     }
 
-    public static void soutMock(){
-        System.out.println(UserRepository.getInstance().findByName("Anna Müller").getEmail());
-    }
+
 }
