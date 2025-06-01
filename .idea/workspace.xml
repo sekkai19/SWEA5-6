@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cb93cb8-497a-4ae0-8805-dcfffde87f51" name="Changes" comment="seems to work fine now. ObserverPattern successfully implemented">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/observerTypes/MailObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/observerTypes/PushObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/observerTypes/SmsObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/HashingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/Scheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/SubscriptionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/CommunicationChannel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Subscription.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Website.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/repository/SubscriptionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/repository/WebsiteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/repository/WebsiteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/Mockloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/MockLoader.java" afterDir="false" />
-    </list>
+    <list default="true" id="9cb93cb8-497a-4ae0-8805-dcfffde87f51" name="Changes" comment="seems to work fine now. ObserverPattern successfully implemented" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +54,7 @@
       <workItem from="1748593533588" duration="2247000" />
       <workItem from="1748596884875" duration="7368000" />
       <workItem from="1748619176846" duration="5238000" />
-      <workItem from="1748717914546" duration="4229000" />
+      <workItem from="1748717914546" duration="4792000" />
     </task>
     <task id="LOCAL-00001" summary="some work. incomplete as f">
       <option name="closed" value="true" />
@@ -85,7 +64,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748469012584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="seems to work fine now. ObserverPattern successfully implemented">
+      <option name="closed" value="true" />
+      <created>1748727344415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748727344416</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
