@@ -33,7 +33,7 @@ public class MockLoader {
         //Websites
         Website website1 = new Website("https://www.example.com/", ComparisionStrategyEnum.CONTENT_SIZE);
         Website website2 = new Website("https://www.reddit.com/r/airfryer", ComparisionStrategyEnum.TEXT_CONTENT);
-        Website website3 = new Website("https://www.reddit.com/r/supplements",ComparisionStrategyEnum.TEXT_CONTENT);
+        Website website3 = new Website("https://www.reddit.com/r/supplements", ComparisionStrategyEnum.TEXT_CONTENT);
         Website website4 = new Website("https://www.web.de", ComparisionStrategyEnum.HTML_CONTENT);
 
         WebsiteRepository.getInstance().add(website1);
@@ -48,7 +48,6 @@ public class MockLoader {
         website3.attach(smsObserver4);
         website3.attach(mailObserver1);
         website4.attach(mailObserver3);
-
 
 
     }

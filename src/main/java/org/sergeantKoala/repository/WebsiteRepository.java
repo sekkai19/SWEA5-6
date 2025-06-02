@@ -11,8 +11,9 @@ public class WebsiteRepository {
 
     private final List<Website> websites = new ArrayList<>();
 
-    // keep constructor private to prevent direct instantiation
-    private WebsiteRepository(){}
+    // keep constructor private to prevent direct instantiation -> use as instance
+    private WebsiteRepository() {
+    }
 
     public static WebsiteRepository getInstance() {
         if (instance == null) {
@@ -21,19 +22,19 @@ public class WebsiteRepository {
         return instance;
     }
 
-    public void add(Website website){
+    public void add(Website website) {
         websites.add(website);
     }
 
-    public void remove(Website website){
-        for (Website w: websites){
-            if(website==w){
+    public void remove(Website website) {
+        for (Website w : websites) {
+            if (website == w) {
                 websites.remove(w);
             }
         }
     }
 
-    public List<Website> getAllWebsites(){
+    public List<Website> getAllWebsites() {
         return websites;
     }
 

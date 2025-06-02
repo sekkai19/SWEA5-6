@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cb93cb8-497a-4ae0-8805-dcfffde87f51" name="Changes" comment="seems to work fine now. ObserverPattern successfully implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/ComparisonStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/ComparisionStrategyEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/ContentSizeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/HtmlContentStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/TextContentStrategy.java" afterDir="false" />
+    <list default="true" id="9cb93cb8-497a-4ae0-8805-dcfffde87f51" name="Changes" comment="working but hardly tested">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Website.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/HashingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/observerTypes/SmsObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/observerTypes/SmsObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/repository/WebsiteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/repository/WebsiteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/ComparisonStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/ComparisonStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/MockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/MockLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/NotificationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/SubscriptionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/ComparisionStrategyEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/ComparisionStrategyEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +41,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "StrategyPattern",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;StrategyPattern&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,6 +67,7 @@
       <workItem from="1748619176846" duration="5238000" />
       <workItem from="1748717914546" duration="4792000" />
       <workItem from="1748859139346" duration="4371000" />
+      <workItem from="1748876742347" duration="449000" />
     </task>
     <task id="LOCAL-00001" summary="some work. incomplete as f">
       <option name="closed" value="true" />
@@ -85,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748727344416</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working but hardly tested">
+      <option name="closed" value="true" />
+      <created>1748876939202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748876939202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some work. incomplete as f" />
     <MESSAGE value="seems to work fine now. ObserverPattern successfully implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="seems to work fine now. ObserverPattern successfully implemented" />
+    <MESSAGE value="working but hardly tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="working but hardly tested" />
   </component>
 </project>

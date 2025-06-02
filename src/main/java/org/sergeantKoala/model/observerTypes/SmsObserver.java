@@ -24,9 +24,7 @@ public class SmsObserver implements Observer {
 
     @Override
     public void update(Subject subject) {
-        System.out.println("SmsObserver [" + name + "@" + mobileNumber + "]:\n" +
-                "Content change at the following identifier: "
-                + subject.getIdentifier());
+        System.out.println("SmsObserver [" + name + "@" + mobileNumber + "]:\n" + "Content change at the following identifier: " + subject.getIdentifier());
     }
 
     @Override

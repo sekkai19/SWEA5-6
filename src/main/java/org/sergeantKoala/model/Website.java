@@ -13,7 +13,7 @@ import java.util.List;
 public class Website implements Subject {
 
     Object lastComparable;
-    private List<Observer> observers = new ArrayList<>();
+    private List<Observer> observers;
     private String url;
     private LocalDateTime lastChangedAt;
     private ComparisonStrategy comparisonStrategy;
@@ -42,24 +42,25 @@ public class Website implements Subject {
         observers.remove(observer);
 
     }
+
     public Object getLastComparable() {
         return lastComparable;
-    }
-
-    public ComparisonStrategy getComparisonStrategy() {
-        return comparisonStrategy;
     }
 
     public void setLastComparable(Object lastComparable) {
         this.lastComparable = lastComparable;
     }
 
-    public void setObservers(List<Observer> observers) {
-        this.observers = observers;
+    public ComparisonStrategy getComparisonStrategy() {
+        return comparisonStrategy;
     }
 
     public void setComparisonStrategy(ComparisonStrategy comparisonStrategy) {
         this.comparisonStrategy = comparisonStrategy;
+    }
+
+    public void setObservers(List<Observer> observers) {
+        this.observers = observers;
     }
 
     @Override
