@@ -1,6 +1,10 @@
 package org.sergeantKoala.model;
 
-import org.sergeantKoala.service.HashingService;
+import org.sergeantKoala.service.ComparisonStrategy;
+import org.sergeantKoala.service.comparisionStrategies.ComparisionStrategyEnum;
+import org.sergeantKoala.service.comparisionStrategies.ContentSizeStrategy;
+import org.sergeantKoala.service.comparisionStrategies.HtmlContentStrategy;
+import org.sergeantKoala.service.comparisionStrategies.TextContentStrategy;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -8,17 +12,24 @@ import java.util.List;
 
 public class Website implements Subject {
 
+    Object lastComparable;
     private List<Observer> observers = new ArrayList<>();
     private String url;
-    private String lastHash;
     private LocalDateTime lastChangedAt;
+    private ComparisonStrategy comparisonStrategy;
 
 
-    public Website(String url) {
+    public Website(String url, ComparisionStrategyEnum StrategyName) {
         this.url = url;
-        this.lastHash = HashingService.hashWebsite(url);
         observers = new ArrayList<>();
         lastChangedAt = LocalDateTime.now();
+        switch (StrategyName) {
+            case HTML_CONTENT -> this.comparisonStrategy = new HtmlContentStrategy();
+            case CONTENT_SIZE -> this.comparisonStrategy = new ContentSizeStrategy();
+            case TEXT_CONTENT -> this.comparisonStrategy = new TextContentStrategy();
+            default -> throw new IllegalArgumentException("Unsupported comparison type");
+        }
+        lastComparable = comparisonStrategy.extractComparable(url);
     }
 
     @Override
@@ -31,13 +42,24 @@ public class Website implements Subject {
         observers.remove(observer);
 
     }
-
-    public String getLastHash() {
-        return lastHash;
+    public Object getLastComparable() {
+        return lastComparable;
     }
 
-    public void setLastHash(String lastHash) {
-        this.lastHash = lastHash;
+    public ComparisonStrategy getComparisonStrategy() {
+        return comparisonStrategy;
+    }
+
+    public void setLastComparable(Object lastComparable) {
+        this.lastComparable = lastComparable;
+    }
+
+    public void setObservers(List<Observer> observers) {
+        this.observers = observers;
+    }
+
+    public void setComparisonStrategy(ComparisonStrategy comparisonStrategy) {
+        this.comparisonStrategy = comparisonStrategy;
     }
 
     @Override
@@ -60,6 +82,10 @@ public class Website implements Subject {
         return lastChangedAt;
     }
 
+    @Override
+    public void setLastChangedAt(LocalDateTime lastChangedAt) {
+        this.lastChangedAt = lastChangedAt;
+    }
 
     public String getUrl() {
         return url;
@@ -67,10 +93,5 @@ public class Website implements Subject {
 
     public void setUrl(String url) {
         this.url = url;
-    }
-
-    @Override
-    public void setLastChangedAt(LocalDateTime lastChangedAt) {
-        this.lastChangedAt = lastChangedAt;
     }
 }

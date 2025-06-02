@@ -22,10 +22,10 @@ public class Scheduler {
         System.out.println("\n***************************************\nChecking websites at " + java.time.LocalTime.now() + "\n");
 
         for (Website w : WebsiteRepository.getInstance().getAllWebsites()) {
-            String oldHash = w.getLastHash();
-            String newHash = HashingService.hashWebsite(w.getUrl());
-            if (!oldHash.equals(newHash)) {
-                w.setLastHash(newHash);
+            Object lastComparable = w.getLastComparable();
+            Object currentComparable = w.getComparisonStrategy().extractComparable(w.getUrl());
+            if (!(lastComparable == currentComparable)) {
+                w.setLastComparable(currentComparable);
                 w.setLastChangedAt(LocalDateTime.now());
                 w.notifyObservers();
             }

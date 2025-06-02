@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cb93cb8-497a-4ae0-8805-dcfffde87f51" name="Changes" comment="seems to work fine now. ObserverPattern successfully implemented" />
+    <list default="true" id="9cb93cb8-497a-4ae0-8805-dcfffde87f51" name="Changes" comment="seems to work fine now. ObserverPattern successfully implemented">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/ComparisonStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/ComparisionStrategyEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/ContentSizeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/HtmlContentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/TextContentStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Website.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/HashingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/MockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/MockLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/NotificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/Scheduler.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -30,17 +42,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "StrategyPattern",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +67,7 @@
       <workItem from="1748596884875" duration="7368000" />
       <workItem from="1748619176846" duration="5238000" />
       <workItem from="1748717914546" duration="4792000" />
+      <workItem from="1748859139346" duration="4371000" />
     </task>
     <task id="LOCAL-00001" summary="some work. incomplete as f">
       <option name="closed" value="true" />
@@ -74,6 +87,17 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some work. incomplete as f" />
