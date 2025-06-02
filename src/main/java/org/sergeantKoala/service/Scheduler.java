@@ -24,7 +24,7 @@ public class Scheduler {
         for (Website w : WebsiteRepository.getInstance().getAllWebsites()) {
             Object lastComparable = w.getLastComparable();
             Object currentComparable = w.getComparisonStrategy().extractComparable(w.getUrl());
-            if ((lastComparable != currentComparable)) {
+            if ((w.getComparisonStrategy().isSame(lastComparable,currentComparable))) {
                 w.setLastComparable(currentComparable);
                 w.setLastChangedAt(LocalDateTime.now());
                 w.notifyObservers();
