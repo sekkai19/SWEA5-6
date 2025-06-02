@@ -5,6 +5,7 @@ import org.sergeantKoala.model.observerTypes.PushObserver;
 import org.sergeantKoala.model.observerTypes.SmsObserver;
 import org.sergeantKoala.model.Website;
 import org.sergeantKoala.repository.WebsiteRepository;
+import org.sergeantKoala.service.comparisionStrategies.ComparisionStrategyEnum;
 
 public class MockLoader {
     public static void loadMockdata() {
@@ -30,13 +31,15 @@ public class MockLoader {
 
 
         //Websites
-        Website website1 = new Website("https://www.example.com/");
-        Website website2 = new Website("https://www.reddit.com/r/airfryer");
-        Website website3 = new Website("https://www.reddit.com/r/supplements");
+        Website website1 = new Website("https://www.example.com/", ComparisionStrategyEnum.CONTENT_SIZE);
+        Website website2 = new Website("https://www.reddit.com/r/airfryer", ComparisionStrategyEnum.TEXT_CONTENT);
+        Website website3 = new Website("https://www.reddit.com/r/supplements",ComparisionStrategyEnum.TEXT_CONTENT);
+        Website website4 = new Website("https://www.web.de", ComparisionStrategyEnum.HTML_CONTENT);
 
         WebsiteRepository.getInstance().add(website1);
         WebsiteRepository.getInstance().add(website2);
         WebsiteRepository.getInstance().add(website3);
+        WebsiteRepository.getInstance().add(website4);
 
         website1.attach(mailObserver1);
         website1.attach(pushObserver1);
@@ -44,6 +47,8 @@ public class MockLoader {
         website3.attach(pushObserver4);
         website3.attach(smsObserver4);
         website3.attach(mailObserver1);
+        website4.attach(mailObserver3);
+
 
 
     }
