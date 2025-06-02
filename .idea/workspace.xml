@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cb93cb8-497a-4ae0-8805-dcfffde87f51" name="Changes" comment="working but hardly tested">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/Website.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/observerTypes/SmsObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/model/observerTypes/SmsObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/repository/WebsiteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/repository/WebsiteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/ComparisonStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/ComparisonStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/MockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/MockLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/SubscriptionManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/ComparisionStrategyEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sergeantKoala/service/comparisionStrategies/ComparisionStrategyEnum.java" afterDir="false" />
-    </list>
+    <list default="true" id="9cb93cb8-497a-4ae0-8805-dcfffde87f51" name="Changes" comment="working but hardly tested" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +57,7 @@
       <workItem from="1748619176846" duration="5238000" />
       <workItem from="1748717914546" duration="4792000" />
       <workItem from="1748859139346" duration="4371000" />
-      <workItem from="1748876742347" duration="449000" />
+      <workItem from="1748876742347" duration="848000" />
     </task>
     <task id="LOCAL-00001" summary="some work. incomplete as f">
       <option name="closed" value="true" />
@@ -93,7 +83,31 @@
       <option name="project" value="LOCAL" />
       <updated>1748876939202</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="working but hardly tested">
+      <option name="closed" value="true" />
+      <created>1748877345245</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748877345245</updated>
+    </task>
+    <task id="LOCAL-00005" summary="working but hardly tested">
+      <option name="closed" value="true" />
+      <created>1748877367157</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748877367157</updated>
+    </task>
+    <task id="LOCAL-00006" summary="working but hardly tested">
+      <option name="closed" value="true" />
+      <created>1748877576051</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748877576051</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
